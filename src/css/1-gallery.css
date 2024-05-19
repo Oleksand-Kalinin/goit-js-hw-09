@@ -1,0 +1,21 @@
+@import url('./reset.css');
+
+.section-gallery {
+    max-width: 1440px;
+    padding: 24px 156px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.gallery-item {
+    width: calc((100% - (24px * 2)) / 3);
+    transition: transform 250ms linear;
+}
+
+.gallery-item:hover {
+    transform: scale(1.04);
+}
