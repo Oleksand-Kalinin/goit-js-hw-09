@@ -94,8 +94,11 @@ listGalleryEl.innerHTML = markupGalleryItems;
 
 
 
-let gallery = new SimpleLightbox('.gallery a', {
+new SimpleLightbox('.gallery a', {
     captionDelay: 250,
     captionsData: 'alt',
 });
-console.log(gallery);
+
+
+const btnGoBackEl = document.querySelector('.btn-go-back');
+btnGoBackEl.addEventListener('click', () => window.location.href = './index.html');
