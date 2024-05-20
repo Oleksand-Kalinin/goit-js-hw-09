@@ -11,6 +11,7 @@
     padding: 8px 16px;
     width: 120px;
     background-color: #4e75ff;
+    transition: background-color 250ms linear;
 
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -21,5 +22,54 @@
 
 .btn-go-back:hover,
 .btn-go-back:focus {
+    background-color: #6c8cff;
+}
+
+.feedback-form {
+    max-width: 408px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+label {
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    width: 100%;
+    resize: none;
+    padding: 8px 16px;
+    margin-top: 8px;
+    border: 1px solid #808080;
+    border-radius: 4px;
+}
+
+textarea {
+    height: 80px;
+}
+
+button[type="submit"] {
+    border-radius: 8px;
+    padding: 8px 16px;
+    min-width: 95px;
+    border: none;
+    background-color: #4e75ff;
+    transition: background-color 250ms linear;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
     background-color: #6c8cff;
 }
