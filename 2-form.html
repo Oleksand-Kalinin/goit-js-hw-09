@@ -11,12 +11,24 @@
   <title>Form</title>
   <script type="module" crossorigin src="/goit-js-hw-09/commonHelpers2.js"></script>
   <link rel="modulepreload" crossorigin href="/goit-js-hw-09/assets/modulepreload-polyfill-3cfb730f.js">
-  <link rel="stylesheet" href="/goit-js-hw-09/assets/2-form-e9b71501.css">
+  <link rel="stylesheet" href="/goit-js-hw-09/assets/2-form-25b6fe3a.css">
 </head>
 
 <body>
 
   <button class="btn-go-back" type="button">Go back</button>
+
+  <form class="feedback-form" autocomplete="off">
+    <label>
+      Email
+      <input type="email" name="email" autofocus />
+    </label>
+    <label>
+      Message
+      <textarea name="message"></textarea>
+    </label>
+    <button type="submit">Submit</button>
+  </form>
 
   
 </body>
