@@ -17,16 +17,23 @@ const formData = {
 
 formFeedBackEl.addEventListener('input', (ev) => {
     if (ev.target.name === 'email')
-        formData.email = ev.target.value;
+        formData.email = ev.target.value.trim();
     if (ev.target.name === 'message')
-        formData.message = ev.target.value;
+        formData.message = ev.target.value.trim();
     localStorage.setItem('feedback-form-state', JSON.stringify(formData));
 });
 
 formFeedBackEl.addEventListener('submit', (ev) => {
     ev.preventDefault();
-    localStorage.removeItem('feedback-form-state');
-    formData.email = '';
-    formData.message = '';
-    formFeedBackEl.reset();
+
+    if (formData.email.trim() === '' || formData.message.trim() === '') {
+        alert('Fill please all fields');
+    }
+    else {
+        console.log(formData);
+        localStorage.removeItem('feedback-form-state');
+        formData.email = '';
+        formData.message = '';
+        formFeedBackEl.reset();
+    }
 });
