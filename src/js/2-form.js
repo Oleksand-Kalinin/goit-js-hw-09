@@ -26,5 +26,7 @@ formFeedBackEl.addEventListener('input', (ev) => {
 formFeedBackEl.addEventListener('submit', (ev) => {
     ev.preventDefault();
     localStorage.removeItem('feedback-form-state');
+    formData.email = '';
+    formData.message = '';
     formFeedBackEl.reset();
 });
